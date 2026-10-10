@@ -1,1 +1,34 @@
-
+{
+  "scenarios": [
+    {
+      "name": "Right hook - fast overtaking car",
+      "description": "A car overtakes the rider and turns right across the bike lane",
+      "hookCar": true,
+      "hookCarStartOffset": -35,
+      "hookCarSpeed": 10,
+      "triggerOffset": -25,
+      "traffic": 2,
+      "greenTime": 40
+    },
+    {
+      "name": "Right hook - slower car ahead",
+      "description": "A car just ahead of the rider turns right across the bike lane",
+      "hookCar": true,
+      "hookCarStartOffset": -20,
+      "hookCarSpeed": 8,
+      "triggerOffset": -25,
+      "traffic": 2,
+      "greenTime": 40
+    },
+    {
+      "name": "Baseline - no conflict",
+      "description": "Same intersection and traffic without the turning car",
+      "hookCar": false,
+      "hookCarStartOffset": 0,
+      "hookCarSpeed": 0,
+      "triggerOffset": 0,
+      "traffic": 2,
+      "greenTime": 40
+    }
+  ]
+}
